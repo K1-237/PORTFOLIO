@@ -1,0 +1,192 @@
+const copy = {
+  fr: {
+    pageTitle: 'K1 DEV — Développeur web & mobile',
+    pageDescription: 'Portfolio de Kuidja Yonkeu Yann Kewan, développeur web et mobile freelance à Yaoundé.',
+    'nav.about': 'À propos', 'nav.skills': 'Compétences', 'nav.projects': 'Projets', 'nav.contact': 'Me contacter',
+    'nav.label': 'Navigation principale', 'brand.label': 'Accueil — K1 DEV', 'menu.open': 'Ouvrir le menu', 'menu.close': 'Fermer le menu', 'language.label': 'Changer la langue',
+    'hero.availability': 'DISPONIBLE POUR DE NOUVEAUX PROJETS',
+    'hero.title': 'Je crée des expériences<br>web & mobile <span class="accent">qui comptent.</span>',
+    'hero.intro': 'Je suis Kuidja Yonkeu Yann Kewan, développeur web et mobile freelance. J’imagine et réalise des expériences numériques claires, rapides et pensées pour les personnes qui les utilisent.',
+    'hero.primary': 'Découvrir mes projets', 'hero.secondary': 'Parlons de ton idée', 'hero.scroll': 'DÉFILER POUR EXPLORER',
+    'hero.build': 'PROJET / 001', 'hero.craft': 'CRÉATION NUMÉRIQUE', 'hero.process': 'CONCEVOIR<br>· DÉVELOPPER',
+    'hero.artlabel': 'Fiche de Kuidja Yonkeu Yann Kewan, développeur full-stack',
+    'paper.comment': '// Profil développeur', 'paper.name': 'Kuidja Yonkeu Yann Kewan', 'paper.role': 'Développeur full-stack',
+    'paper.web': 'Développement web', 'paper.mobile': 'Applications mobiles', 'paper.location': 'Yaoundé, Cameroun',
+    'about.eyebrow': '01 — QUI SUIS-JE ?',
+    'about.title': 'Des idées utiles,<br>des expériences<br><span class="muted">faites pour durer.</span>',
+    'about.copy1': 'Développeur web et mobile freelance, je donne vie à des produits numériques de la première idée jusqu’à leur mise en ligne. Je porte une attention particulière à la clarté des parcours, à la qualité visuelle et aux détails qui rendent une application agréable au quotidien.',
+    'about.copy2': 'J’interviens sur le front-end, les applications mobiles et le back-end. Chaque collaboration commence par une bonne compréhension du besoin et se construit autour d’une solution concrète, soignée et adaptée.',
+    'about.link': 'Parlons de ton projet', 'about.value1': 'Penser à l’utilisateur', 'about.value1copy': 'Des parcours clairs, sans friction.',
+    'about.value2': 'Soigner les détails', 'about.value2copy': 'Une interface cohérente sur chaque écran.',
+    'about.value3': 'Construire pour durer', 'about.value3copy': 'Un code lisible et des bases solides.',
+    'skills.eyebrow': '02 — MON TERRAIN DE JEU',
+    'skills.title': 'Des outils pour<br><span class="muted">chaque étape.</span>',
+    'skills.copy': 'Je conçois l’interface, je développe l’application et je bâtis ce qui la fait tourner. Voici ma boîte à outils.',
+    'skills.webtitle': 'Interfaces web', 'skills.webcopy': 'Des expériences fluides, accessibles et adaptées à chaque écran.',
+    'skills.mobiletitle': 'Applications mobiles', 'skills.mobilecopy': 'Des applications pensées pour accompagner les utilisateurs partout.',
+    'skills.backendtitle': 'API & données', 'skills.backendcopy': 'Des services fiables et des données organisées pour faire évoluer le produit.',
+    'projects.eyebrow': '03 — PROJET À LA UNE',
+    'projects.title': 'Un produit pensé<br><span class="muted">pour avancer ensemble.</span>',
+    'projects.intro': 'Voici Umoja, une application mobile conçue pour simplifier la gestion financière des communautés.',
+    'projects.type': 'APPLICATION MOBILE · FINANCE COMMUNAUTAIRE',
+    'projects.description': 'Une application mobile qui aide les communautés à organiser leur épargne, leurs prêts, leurs cotisations et leurs transactions au même endroit.',
+    'projects.role': 'Mon travail : concevoir et développer l’expérience mobile, avec un back-end Express et PostgreSQL.',
+    'projects.freelance': 'DÉVELOPPEMENT FREELANCE', 'projects.nexttitle': 'On imagine la suite ?',
+    'projects.nextcopy': 'J’aide les entreprises et les porteurs d’idées à créer des produits web et mobiles adaptés à leurs besoins.',
+    'projects.nextlink': 'Discutons de ton projet',
+    'phone.hello': 'Bonjour,', 'phone.balance': 'SOLDE DU PORTEFEUILLE', 'phone.personal': 'Portefeuille personnel', 'phone.view': 'Voir le portefeuille ↗',
+    'phone.assistant': 'Je suis là pour vous aider', 'phone.home': 'Accueil', 'phone.communities': 'Communautés', 'phone.finances': 'Finances', 'phone.profile': 'Profil', 'phone.badge': 'UMOJA / APPLICATION MOBILE',
+    'contact.eyebrow': '04 — ON SE PARLE ?',
+    'contact.title': 'Un projet à faire grandir ?<br><span class="muted">Je suis à l’écoute.</span>',
+    'contact.copy': 'Tu lances une idée, tu veux améliorer un produit ou tu cherches un développeur freelance ? Écris-moi : parlons de tes objectifs et de la meilleure façon d’y répondre.',
+    'contact.email': 'Parlons de ton projet', 'contact.whatsapp': 'Écris-moi sur WhatsApp', 'contact.location': 'YAOUNDÉ, CAMEROUN', 'contact.top': 'RETOUR EN HAUT ↑',
+  },
+  en: {
+    pageTitle: 'K1 DEV — Web & Mobile Developer',
+    pageDescription: 'Portfolio of Kuidja Yonkeu Yann Kewan, freelance web and mobile developer based in Yaoundé.',
+    'nav.about': 'About', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact me',
+    'nav.label': 'Main navigation', 'brand.label': 'Home — K1 DEV', 'menu.open': 'Open menu', 'menu.close': 'Close menu', 'language.label': 'Change language',
+    'hero.availability': 'AVAILABLE FOR NEW PROJECTS',
+    'hero.title': 'I create web & mobile<br>experiences <span class="accent">that matter.</span>',
+    'hero.intro': 'I’m Kuidja Yonkeu Yann Kewan, a freelance web and mobile developer. I turn ideas into clear, fast digital experiences designed around the people who use them.',
+    'hero.primary': 'Explore my projects', 'hero.secondary': 'Let’s talk about your idea', 'hero.scroll': 'SCROLL TO EXPLORE',
+    'hero.build': 'PROJECT / 001', 'hero.craft': 'DIGITAL CRAFT', 'hero.process': 'DESIGN<br>· DEVELOP',
+    'hero.artlabel': 'Developer profile for Kuidja Yonkeu Yann Kewan',
+    'paper.comment': '// Developer profile', 'paper.name': 'Kuidja Yonkeu Yann Kewan', 'paper.role': 'Full-Stack Developer',
+    'paper.web': 'Web Development', 'paper.mobile': 'Mobile Applications', 'paper.location': 'Yaoundé, Cameroon',
+    'about.eyebrow': '01 — ABOUT ME',
+    'about.title': 'Useful ideas,<br>digital experiences<br><span class="muted">built to last.</span>',
+    'about.copy1': 'As a freelance web and mobile developer, I bring digital products to life from the first idea through launch. I focus on clear user journeys, thoughtful visuals and the small details that make an app a pleasure to use every day.',
+    'about.copy2': 'I work across front-end, mobile apps and back-end systems. Every collaboration starts with understanding the need, then shaping a practical, polished solution around it.',
+    'about.link': 'Let’s talk about your project', 'about.value1': 'Start with people', 'about.value1copy': 'Clear journeys with less friction.',
+    'about.value2': 'Care about details', 'about.value2copy': 'A consistent interface on every screen.',
+    'about.value3': 'Build to last', 'about.value3copy': 'Readable code and solid foundations.',
+    'skills.eyebrow': '02 — WHAT I DO',
+    'skills.title': 'The right tools<br><span class="muted">for every stage.</span>',
+    'skills.copy': 'I design the interface, build the app and create the systems behind it. Here are the tools I use.',
+    'skills.webtitle': 'Web interfaces', 'skills.webcopy': 'Smooth, accessible experiences that adapt to every screen.',
+    'skills.mobiletitle': 'Mobile apps', 'skills.mobilecopy': 'Apps designed to support people wherever they are.',
+    'skills.backendtitle': 'APIs & data', 'skills.backendcopy': 'Reliable services and organized data that help products grow.',
+    'projects.eyebrow': '03 — FEATURED PROJECT',
+    'projects.title': 'A product built<br><span class="muted">to move forward, together.</span>',
+    'projects.intro': 'Meet Umoja, a mobile app designed to make community finance easier to manage.',
+    'projects.type': 'MOBILE APP · COMMUNITY FINANCE',
+    'projects.description': 'A mobile app that helps communities organize savings, loans, contributions and transactions in one place.',
+    'projects.role': 'My role: designing and building the mobile experience, supported by an Express and PostgreSQL back end.',
+    'projects.freelance': 'FREELANCE DEVELOPMENT', 'projects.nexttitle': 'What shall we build next?',
+    'projects.nextcopy': 'I help businesses and founders create web and mobile products shaped around their needs.',
+    'projects.nextlink': 'Let’s discuss your project',
+    'phone.hello': 'Hello,', 'phone.balance': 'WALLET BALANCE', 'phone.personal': 'Personal wallet', 'phone.view': 'View wallet ↗',
+    'phone.assistant': 'Here to help you move forward', 'phone.home': 'Home', 'phone.communities': 'Communities', 'phone.finances': 'Finances', 'phone.profile': 'Profile', 'phone.badge': 'UMOJA / MOBILE APP',
+    'contact.eyebrow': '04 — LET’S TALK',
+    'contact.title': 'Have a project in mind?<br><span class="muted">I’m ready to listen.</span>',
+    'contact.copy': 'Starting an idea, improving a product or looking for a freelance developer? Get in touch and let’s talk about your goals and how to reach them.',
+    'contact.email': 'Let’s discuss your project', 'contact.whatsapp': 'Message me on WhatsApp', 'contact.location': 'YAOUNDÉ, CAMEROON', 'contact.top': 'BACK TO TOP ↑',
+  },
+};
+
+const menuButton = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('.main-nav');
+const languageButton = document.querySelector('.language-toggle');
+let currentLanguage = 'fr';
+
+try {
+  const savedLanguage = localStorage.getItem('portfolio-language');
+  if (savedLanguage === 'en' || savedLanguage === 'fr') currentLanguage = savedLanguage;
+} catch {}
+
+function setLanguage(language) {
+  currentLanguage = language;
+  const translations = copy[language];
+  document.documentElement.lang = language;
+  document.title = translations.pageTitle;
+  document.querySelector('meta[name="description"]').content = translations.pageDescription;
+  document.querySelector('[data-email-contact]').href = `mailto:donjuan26022@gmail.com?subject=${encodeURIComponent(language === 'fr' ? 'Parlons de votre projet' : 'Let’s discuss your project')}`;
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    element.textContent = translations[element.dataset.i18n];
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach((element) => {
+    element.innerHTML = translations[element.dataset.i18nHtml];
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach((element) => {
+    element.setAttribute('aria-label', translations[element.dataset.i18nAria]);
+  });
+  navigation.setAttribute('aria-label', translations['nav.label']);
+  menuButton.setAttribute('aria-label', menuButton.getAttribute('aria-expanded') === 'true' ? translations['menu.close'] : translations['menu.open']);
+  languageButton.setAttribute('aria-label', translations['language.label']);
+  languageButton.querySelectorAll('[data-language]').forEach((option) => {
+    option.classList.toggle('active', option.dataset.language === language);
+  });
+  document.querySelectorAll('h1, h2').forEach(animateWords);
+  try { localStorage.setItem('portfolio-language', language); } catch {}
+}
+
+function animateWords(title) {
+  title.classList.remove('words-in');
+  const walker = document.createTreeWalker(title, NodeFilter.SHOW_TEXT);
+  const textNodes = [];
+  while (walker.nextNode()) textNodes.push(walker.currentNode);
+  let wordIndex = 0;
+  textNodes.forEach((textNode) => {
+    const fragment = document.createDocumentFragment();
+    textNode.textContent.split(/(\s+)/).filter(Boolean).forEach((part) => {
+      if (/^\s+$/.test(part)) {
+        fragment.append(document.createTextNode(part));
+        return;
+      }
+      const word = document.createElement('span');
+      word.className = 'word-part';
+      word.style.setProperty('--word-index', wordIndex++);
+      word.textContent = part;
+      fragment.append(word);
+    });
+    textNode.replaceWith(fragment);
+  });
+  title.classList.add('word-title');
+  void title.offsetWidth;
+  title.classList.add('words-in');
+}
+
+setLanguage(currentLanguage);
+document.querySelector('#year').textContent = new Date().getFullYear();
+
+menuButton.addEventListener('click', () => {
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-expanded', String(!isOpen));
+  menuButton.setAttribute('aria-label', copy[currentLanguage][isOpen ? 'menu.open' : 'menu.close']);
+  navigation.classList.toggle('open', !isOpen);
+});
+
+navigation.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => {
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', copy[currentLanguage]['menu.open']);
+    navigation.classList.remove('open');
+  });
+});
+
+languageButton.addEventListener('click', () => setLanguage(currentLanguage === 'fr' ? 'en' : 'fr'));
+
+const revealItems = document.querySelectorAll('.section-heading, .about-grid, .values, .skills-top, .skill-group, .project-card, .project-note, .contact-inner > *');
+const titles = document.querySelectorAll('h1, h2');
+
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  revealItems.forEach((item) => item.classList.add('reveal'));
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.14 });
+  revealItems.forEach((item) => revealObserver.observe(item));
+
+  const titleObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('words-in');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.35 });
+  titles.forEach((title) => titleObserver.observe(title));
+}
