@@ -2,7 +2,7 @@ const copy = {
   fr: {
     pageTitle: 'K1 DEV — Développeur web & mobile',
     pageDescription: 'Portfolio de Kuidja Yonkeu Yann Kewan, développeur web et mobile freelance à Yaoundé.',
-    'nav.about': 'À propos', 'nav.skills': 'Compétences', 'nav.projects': 'Projets', 'nav.contact': 'Me contacter',
+    'nav.about': 'À propos', 'nav.skills': 'Compétences', 'nav.projects': 'Projets', 'nav.pricing': 'Tarifs', 'nav.contact': 'Me contacter',
     'nav.label': 'Navigation principale', 'brand.label': 'Accueil — K1 DEV', 'menu.open': 'Ouvrir le menu', 'menu.close': 'Fermer le menu', 'language.label': 'Changer la langue',
     'hero.availability': 'DISPONIBLE POUR DE NOUVEAUX PROJETS',
     'hero.title': 'Je crée des expériences<br>web & mobile <span class="accent">qui comptent.</span>',
@@ -36,7 +36,12 @@ const copy = {
     'projects.nextlink': 'Discutons de ton projet',
     'phone.hello': 'Bonjour,', 'phone.balance': 'SOLDE DU PORTEFEUILLE', 'phone.personal': 'Portefeuille personnel', 'phone.view': 'Voir le portefeuille ↗',
     'phone.assistant': 'Je suis là pour vous aider', 'phone.home': 'Accueil', 'phone.communities': 'Communautés', 'phone.finances': 'Finances', 'phone.profile': 'Profil', 'phone.badge': 'UMOJA / APPLICATION MOBILE',
-    'contact.eyebrow': '04 — ON SE PARLE ?',
+    'pricing.eyebrow': '04 — TARIFS & PRESTATIONS', 'pricing.title': 'Un site adapté<br><span class="muted">à ton ambition.</span>',
+    'pricing.index1': '01 / ESSENTIEL', 'pricing.index2': '02 / PROFESSIONNEL', 'pricing.index3': '03 / BOUTIQUE', 'pricing.index4': '04 / NOUVEAU DÉPART',
+    'pricing.simple': 'Site web simple', 'pricing.simplecopy': 'Une présence en ligne claire pour présenter ton activité et tes informations essentielles.', 'pricing.from': 'À PARTIR DE', 'pricing.ask': 'Demander un devis',
+    'pricing.showcase': 'Site vitrine professionnel', 'pricing.showcasecopy': 'Un site soigné pour mettre en valeur tes services, ton image et faciliter la prise de contact.', 'pricing.popular': 'LE PLUS CHOISI',
+    'pricing.ecommerce': 'Site e-commerce', 'pricing.ecommercecopy': 'Une boutique en ligne pour présenter tes produits et recevoir des commandes.', 'pricing.redesign': 'Refonte de site web', 'pricing.redesigncopy': 'Modernisation du design, amélioration de l’expérience et adaptation aux mobiles.', 'pricing.quote': 'TARIF', 'pricing.custom': 'Sur devis',
+    'contact.eyebrow': '05 — ON SE PARLE ?',
     'contact.title': 'Un projet à faire grandir ?<br><span class="muted">Je suis à l’écoute.</span>',
     'contact.copy': 'Tu lances une idée, tu veux améliorer un produit ou tu cherches un développeur freelance ? Écris-moi : parlons de tes objectifs et de la meilleure façon d’y répondre.',
     'contact.email': 'Parlons de ton projet', 'contact.whatsapp': 'Écris-moi sur WhatsApp', 'contact.location': 'YAOUNDÉ, CAMEROUN', 'contact.top': 'RETOUR EN HAUT ↑',
@@ -44,7 +49,7 @@ const copy = {
   en: {
     pageTitle: 'K1 DEV — Web & Mobile Developer',
     pageDescription: 'Portfolio of Kuidja Yonkeu Yann Kewan, freelance web and mobile developer based in Yaoundé.',
-    'nav.about': 'About', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.contact': 'Contact me',
+    'nav.about': 'About', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.pricing': 'Pricing', 'nav.contact': 'Contact me',
     'nav.label': 'Main navigation', 'brand.label': 'Home — K1 DEV', 'menu.open': 'Open menu', 'menu.close': 'Close menu', 'language.label': 'Change language',
     'hero.availability': 'AVAILABLE FOR NEW PROJECTS',
     'hero.title': 'I create web & mobile<br>experiences <span class="accent">that matter.</span>',
@@ -78,7 +83,12 @@ const copy = {
     'projects.nextlink': 'Let’s discuss your project',
     'phone.hello': 'Hello,', 'phone.balance': 'WALLET BALANCE', 'phone.personal': 'Personal wallet', 'phone.view': 'View wallet ↗',
     'phone.assistant': 'Here to help you move forward', 'phone.home': 'Home', 'phone.communities': 'Communities', 'phone.finances': 'Finances', 'phone.profile': 'Profile', 'phone.badge': 'UMOJA / MOBILE APP',
-    'contact.eyebrow': '04 — LET’S TALK',
+    'pricing.eyebrow': '04 — PRICING & SERVICES', 'pricing.title': 'A website tailored<br><span class="muted">to your goals.</span>',
+    'pricing.index1': '01 / ESSENTIAL', 'pricing.index2': '02 / PROFESSIONAL', 'pricing.index3': '03 / ONLINE STORE', 'pricing.index4': '04 / A FRESH START',
+    'pricing.simple': 'Simple website', 'pricing.simplecopy': 'A clear online presence to introduce your business and share essential information.', 'pricing.from': 'STARTING AT', 'pricing.ask': 'Request a quote',
+    'pricing.showcase': 'Professional showcase website', 'pricing.showcasecopy': 'A polished website to highlight your services, your brand and make it easy to get in touch.', 'pricing.popular': 'POPULAR CHOICE',
+    'pricing.ecommerce': 'E-commerce website', 'pricing.ecommercecopy': 'An online store to present your products and receive orders.', 'pricing.redesign': 'Website redesign', 'pricing.redesigncopy': 'A refreshed design, improved user experience and a layout adapted to mobile.', 'pricing.quote': 'PRICE', 'pricing.custom': 'Custom quote',
+    'contact.eyebrow': '05 — LET’S TALK',
     'contact.title': 'Have a project in mind?<br><span class="muted">I’m ready to listen.</span>',
     'contact.copy': 'Starting an idea, improving a product or looking for a freelance developer? Get in touch and let’s talk about your goals and how to reach them.',
     'contact.email': 'Let’s discuss your project', 'contact.whatsapp': 'Message me on WhatsApp', 'contact.location': 'YAOUNDÉ, CAMEROON', 'contact.top': 'BACK TO TOP ↑',
@@ -167,7 +177,7 @@ navigation.querySelectorAll('a').forEach((link) => {
 
 languageButton.addEventListener('click', () => setLanguage(currentLanguage === 'fr' ? 'en' : 'fr'));
 
-const revealItems = document.querySelectorAll('.section-heading, .about-grid, .values, .skills-top, .skill-group, .project-card, .project-note, .contact-inner > *');
+const revealItems = document.querySelectorAll('.section-heading, .about-grid, .values, .skills-top, .skill-group, .project-card, .project-note, .pricing-top, .price-card, .contact-inner > *');
 const titles = document.querySelectorAll('h1, h2');
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
