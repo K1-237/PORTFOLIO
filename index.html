@@ -13,7 +13,16 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<body>
+<body class="is-loading">
+  <div class="page-loader" id="page-loader" role="status" aria-live="polite" data-i18n-aria="loading.label" aria-label="Chargement du portfolio K1 DEV">
+    <div class="loader-core">
+      <div class="loader-orbits" aria-hidden="true"><span></span><span></span></div>
+      <span class="loader-spark" aria-hidden="true">✳</span>
+      <div class="loader-lockup"><span class="loader-mark">K1</span><span class="loader-name">DEV<span class="loader-caret" aria-hidden="true"></span></span></div>
+      <div class="loader-progress" aria-hidden="true"><span></span></div>
+    </div>
+    <div class="loader-meta"><span data-i18n="loading.location">YAOUNDÉ · CAMEROUN</span><span data-i18n="loading.status">CRÉATION NUMÉRIQUE · WEB & MOBILE</span></div>
+  </div>
   <header class="site-header">
     <a class="brand" href="#accueil" data-i18n-aria="brand.label" aria-label="Accueil — K1 DEV"><span class="brand-mark">K1</span><span class="brand-name">DEV</span></a>
     <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
@@ -49,7 +58,51 @@
     </section>
 
     <section class="skills section-pad" id="competences"><div class="section-wrap"><div class="section-heading"><p class="eyebrow" data-i18n="skills.eyebrow">02 — MON TERRAIN DE JEU</p><span class="heading-rule"></span></div><div class="skills-top"><h2 data-i18n-html="skills.title">Des outils pour<br><span class="muted">chaque étape.</span></h2><p data-i18n="skills.copy">Je conçois l’interface, je développe l’application et je bâtis ce qui la fait tourner. Voici ma boîte à outils.</p></div>
-      <div class="skill-groups"><article class="skill-group"><div class="skill-card-top"><span class="group-number">01 / FRONT-END</span><span class="skill-glyph" aria-hidden="true">&lt;/&gt;</span></div><h3 data-i18n="skills.webtitle">Interfaces web</h3><p data-i18n="skills.webcopy">Des expériences fluides, accessibles et adaptées à chaque écran.</p><div class="tag-list"><span>React</span><span>JavaScript</span><span>HTML</span><span>Tailwind CSS</span></div></article><article class="skill-group"><div class="skill-card-top"><span class="group-number">02 / MOBILE</span><span class="skill-glyph" aria-hidden="true">▯</span></div><h3 data-i18n="skills.mobiletitle">Applications mobiles</h3><p data-i18n="skills.mobilecopy">Des applications pensées pour accompagner les utilisateurs partout.</p><div class="tag-list"><span>React Native</span><span>Expo</span><span>Expo Router</span></div></article><article class="skill-group"><div class="skill-card-top"><span class="group-number">03 / BACK-END</span><span class="skill-glyph" aria-hidden="true">{ }</span></div><h3 data-i18n="skills.backendtitle">API & données</h3><p data-i18n="skills.backendcopy">Des services fiables et des données organisées pour faire évoluer le produit.</p><div class="tag-list"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>SQL</span></div></article></div>
+      <div class="skill-groups">
+        <a class="skill-group skill-group-link" href="#tarifs" data-i18n-aria="skills.webprice" aria-label="Voir les tarifs de développement de sites web"><div class="skill-card-top"><span class="group-number">01 / FRONT-END</span><span class="skill-glyph" aria-hidden="true">&lt;/&gt;</span></div><h3 data-i18n="skills.webtitle">Interfaces web</h3><p data-i18n="skills.webcopy">Des expériences fluides, accessibles et adaptées à chaque écran.</p><span class="skill-price-link"><span data-i18n="skills.price">Voir les tarifs</span><b aria-hidden="true">↗</b></span></a>
+        <a class="skill-group skill-group-link" href="#tarifs-mobile" data-i18n-aria="skills.mobileprice" aria-label="Voir les tarifs de développement d’applications mobiles"><div class="skill-card-top"><span class="group-number">02 / MOBILE</span><span class="skill-glyph" aria-hidden="true">▯</span></div><h3 data-i18n="skills.mobiletitle">Applications mobiles</h3><p data-i18n="skills.mobilecopy">Des applications pensées pour accompagner les utilisateurs partout.</p><span class="skill-price-link"><span data-i18n="skills.price">Voir les tarifs</span><b aria-hidden="true">↗</b></span></a>
+        <article class="skill-group"><div class="skill-card-top"><span class="group-number">03 / BACK-END</span><span class="skill-glyph" aria-hidden="true">{ }</span></div><h3 data-i18n="skills.backendtitle">API & données</h3><p data-i18n="skills.backendcopy">Des services fiables et des données organisées pour faire évoluer le produit.</p></article>
+      </div>
+      <div class="stack-marquee" role="region" data-i18n-aria="skills.marquee" aria-label="Défilement animé des logos des technologies utilisées par K1 Dev">
+        <div class="stack-window"><div class="stack-track">
+          <ul class="stack-set">
+            <li><img data-icon="react" src="https://cdn.simpleicons.org/react/61DAFB" alt="React / React Native" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="javascript" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="html5" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="vite" src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="tailwindcss" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="css3" src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS3" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="figma" src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="expo" src="https://cdn.simpleicons.org/expo/FFFFFF" alt="Expo Router" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="nodedotjs" src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="express" src="https://cdn.simpleicons.org/express/FFFFFF" alt="Express" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="fastapi" src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" width="42" height="42" loading="lazy"></li>
+            <li class="stack-custom-logo"><svg viewBox="0 0 48 48" role="img" aria-label="REST API" fill="none"><path d="M11 12h9M28 12h9M15.5 16.5v15M32.5 16.5v15M15.5 32h17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="37" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="15.5" cy="36" r="4" stroke="currentColor" stroke-width="2"/><circle cx="32.5" cy="36" r="4" stroke="currentColor" stroke-width="2"/></svg></li>
+            <li><img data-icon="postgresql" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" width="42" height="42" loading="lazy"></li>
+            <li class="stack-custom-logo"><svg viewBox="0 0 48 48" role="img" aria-label="SQL" fill="none"><ellipse cx="24" cy="11" rx="14" ry="6" stroke="currentColor" stroke-width="2"/><path d="M10 11v10c0 3.3 6.3 6 14 6s14-2.7 14-6V11M10 21v10c0 3.3 6.3 6 14 6s14-2.7 14-6V21" stroke="currentColor" stroke-width="2"/><path d="M10 31v6c0 3.3 6.3 6 14 6s14-2.7 14-6v-6" stroke="currentColor" stroke-width="2"/></svg></li>
+            <li><img data-icon="git" src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="github" src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="42" height="42" loading="lazy"></li>
+          </ul>
+          <ul class="stack-set" aria-hidden="true">
+            <li><img data-icon="react" src="https://cdn.simpleicons.org/react/61DAFB" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="javascript" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="html5" src="https://cdn.simpleicons.org/html5/E34F26" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="vite" src="https://cdn.simpleicons.org/vite/646CFF" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="tailwindcss" src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="css3" src="https://cdn.simpleicons.org/css3/1572B6" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="figma" src="https://cdn.simpleicons.org/figma/F24E1E" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="expo" src="https://cdn.simpleicons.org/expo/FFFFFF" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="nodedotjs" src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="express" src="https://cdn.simpleicons.org/express/FFFFFF" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="fastapi" src="https://cdn.simpleicons.org/fastapi/009688" alt="" width="42" height="42" loading="lazy"></li>
+            <li class="stack-custom-logo"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none"><path d="M11 12h9M28 12h9M15.5 16.5v15M32.5 16.5v15M15.5 32h17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="11" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="37" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="15.5" cy="36" r="4" stroke="currentColor" stroke-width="2"/><circle cx="32.5" cy="36" r="4" stroke="currentColor" stroke-width="2"/></svg></li>
+            <li><img data-icon="postgresql" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" width="42" height="42" loading="lazy"></li>
+            <li class="stack-custom-logo"><svg viewBox="0 0 48 48" aria-hidden="true" fill="none"><ellipse cx="24" cy="11" rx="14" ry="6" stroke="currentColor" stroke-width="2"/><path d="M10 11v10c0 3.3 6.3 6 14 6s14-2.7 14-6V11M10 21v10c0 3.3 6.3 6 14 6s14-2.7 14-6V21" stroke="currentColor" stroke-width="2"/><path d="M10 31v6c0 3.3 6.3 6 14 6s14-2.7 14-6v-6" stroke="currentColor" stroke-width="2"/></svg></li>
+            <li><img data-icon="git" src="https://cdn.simpleicons.org/git/F05032" alt="" width="42" height="42" loading="lazy"></li>
+            <li><img data-icon="github" src="https://cdn.simpleicons.org/github/FFFFFF" alt="" width="42" height="42" loading="lazy"></li>
+          </ul>
+        </div></div>
+      </div>
     </div></section>
 
     <section class="projects section-wrap section-pad" id="projets"><div class="section-heading"><p class="eyebrow" data-i18n="projects.eyebrow">03 — PROJET À LA UNE</p><span class="heading-rule"></span></div><div class="projects-top"><h2 data-i18n-html="projects.title">Un produit pensé<br><span class="muted">pour avancer ensemble.</span></h2><p data-i18n="projects.intro">Voici Umoja, une application mobile conçue pour simplifier la gestion financière des communautés.</p></div>
@@ -66,6 +119,14 @@
         <article class="price-card price-featured"><span class="price-index" data-i18n="pricing.index2">02 / PROFESSIONNEL</span><span class="price-badge" data-i18n="pricing.popular">LE PLUS CHOISI</span><h3 data-i18n="pricing.showcase">Site vitrine professionnel</h3><p data-i18n="pricing.showcasecopy">Un site soigné pour mettre en valeur tes services, ton image et faciliter la prise de contact.</p><div class="price-amount"><small data-i18n="pricing.from">À PARTIR DE</small><strong>200 000 <span>FCFA</span></strong></div><a class="price-link" href="#contact"><span data-i18n="pricing.ask">Demander un devis</span><b>↗</b></a></article>
         <article class="price-card"><span class="price-index" data-i18n="pricing.index3">03 / BOUTIQUE</span><h3 data-i18n="pricing.ecommerce">Site e-commerce</h3><p data-i18n="pricing.ecommercecopy">Une boutique en ligne pour présenter tes produits et recevoir des commandes.</p><div class="price-amount"><small data-i18n="pricing.from">À PARTIR DE</small><strong>350 000 <span>FCFA</span></strong></div><a class="price-link" href="#contact"><span data-i18n="pricing.ask">Demander un devis</span><b>↗</b></a></article>
         <article class="price-card price-redesign"><span class="price-index" data-i18n="pricing.index4">04 / NOUVEAU DÉPART</span><h3 data-i18n="pricing.redesign">Refonte de site web</h3><p data-i18n="pricing.redesigncopy">Modernisation du design, amélioration de l’expérience et adaptation aux mobiles.</p><div class="price-amount"><small data-i18n="pricing.quote">TARIF</small><strong data-i18n="pricing.custom">Sur devis</strong></div><a class="price-link" href="#contact"><span data-i18n="pricing.ask">Demander un devis</span><b>↗</b></a></article>
+      </div>
+      <div class="mobile-pricing" id="tarifs-mobile">
+        <div class="section-heading"><p class="eyebrow" data-i18n="mobilePricing.eyebrow">APPLICATIONS MOBILES</p><span class="heading-rule"></span></div>
+        <div class="mobile-pricing-top"><h3 data-i18n="mobilePricing.title">Tarifs de développement mobile</h3><p data-i18n="mobilePricing.intro">Chaque application est chiffrée selon ses fonctionnalités, ses écrans et les plateformes ciblées.</p></div>
+        <div class="mobile-price-grid">
+          <article class="mobile-price-card"><span class="price-index">01 / MVP</span><h4 data-i18n="mobilePricing.mvp">Prototype & MVP</h4><p data-i18n="mobilePricing.mvpcopy">Une première version pour concrétiser et valider l’idée essentielle de ton application.</p><strong data-i18n="pricing.custom">Sur devis</strong><a href="#contact"><span data-i18n="mobilePricing.ask">Discutons-en</span><b>↗</b></a></article>
+          <article class="mobile-price-card"><span class="price-index">02 / APPLICATION</span><h4 data-i18n="mobilePricing.app">Application mobile complète</h4><p data-i18n="mobilePricing.appcopy">Une application personnalisée, conçue pour les besoins de ton activité et de tes utilisateurs.</p><strong data-i18n="pricing.custom">Sur devis</strong><a href="#contact"><span data-i18n="mobilePricing.ask">Discutons-en</span><b>↗</b></a></article>
+        </div>
       </div>
     </div></section>
 

@@ -4,6 +4,7 @@ const copy = {
     pageDescription: 'Portfolio de Kuidja Yonkeu Yann Kewan, développeur web et mobile freelance à Yaoundé.',
     'nav.about': 'À propos', 'nav.skills': 'Compétences', 'nav.projects': 'Projets', 'nav.pricing': 'Tarifs', 'nav.contact': 'Me contacter',
     'nav.label': 'Navigation principale', 'brand.label': 'Accueil — K1 DEV', 'menu.open': 'Ouvrir le menu', 'menu.close': 'Fermer le menu', 'language.label': 'Changer la langue',
+    'loading.label': 'Chargement du portfolio K1 DEV', 'loading.location': 'YAOUNDÉ · CAMEROUN', 'loading.status': 'CRÉATION NUMÉRIQUE · WEB & MOBILE',
     'hero.availability': 'DISPONIBLE POUR DE NOUVEAUX PROJETS',
     'hero.title': 'Je crée des expériences<br>web & mobile <span class="accent">qui comptent.</span>',
     'hero.intro': 'Je suis Kuidja Yonkeu Yann Kewan, développeur web et mobile freelance. J’imagine et réalise des expériences numériques claires, rapides et pensées pour les personnes qui les utilisent.',
@@ -22,9 +23,15 @@ const copy = {
     'skills.eyebrow': '02 — MON TERRAIN DE JEU',
     'skills.title': 'Des outils pour<br><span class="muted">chaque étape.</span>',
     'skills.copy': 'Je conçois l’interface, je développe l’application et je bâtis ce qui la fait tourner. Voici ma boîte à outils.',
-    'skills.webtitle': 'Interfaces web', 'skills.webcopy': 'Des expériences fluides, accessibles et adaptées à chaque écran.',
+    'skills.marquee': 'Défilement animé des logos des technologies utilisées par K1 Dev',
+    'skills.webtitle': 'Développement de sites web', 'skills.webcopy': 'Des expériences fluides, accessibles et adaptées à chaque écran.',
     'skills.mobiletitle': 'Applications mobiles', 'skills.mobilecopy': 'Des applications pensées pour accompagner les utilisateurs partout.',
     'skills.backendtitle': 'API & données', 'skills.backendcopy': 'Des services fiables et des données organisées pour faire évoluer le produit.',
+    'skills.price': 'Voir les tarifs', 'skills.webprice': 'Voir les tarifs de développement de sites web', 'skills.mobileprice': 'Voir les tarifs de développement d’applications mobiles',
+    'mobilePricing.eyebrow': 'DÉVELOPPEMENT MOBILE', 'mobilePricing.title': 'Tarifs de développement mobile', 'mobilePricing.intro': 'Chaque application est chiffrée selon ses fonctionnalités, ses écrans et les plateformes ciblées.',
+    'mobilePricing.mvp': 'Prototype & MVP', 'mobilePricing.mvpcopy': 'Une première version pour concrétiser et valider l’idée essentielle de ton application.',
+    'mobilePricing.app': 'Application mobile complète', 'mobilePricing.appcopy': 'Une application personnalisée, conçue pour les besoins de ton activité et de tes utilisateurs.',
+    'mobilePricing.ask': 'Discutons-en',
     'projects.eyebrow': '03 — PROJET À LA UNE',
     'projects.title': 'Un produit pensé<br><span class="muted">pour avancer ensemble.</span>',
     'projects.intro': 'Voici Umoja, une application mobile conçue pour simplifier la gestion financière des communautés.',
@@ -51,6 +58,7 @@ const copy = {
     pageDescription: 'Portfolio of Kuidja Yonkeu Yann Kewan, freelance web and mobile developer based in Yaoundé.',
     'nav.about': 'About', 'nav.skills': 'Skills', 'nav.projects': 'Projects', 'nav.pricing': 'Pricing', 'nav.contact': 'Contact me',
     'nav.label': 'Main navigation', 'brand.label': 'Home — K1 DEV', 'menu.open': 'Open menu', 'menu.close': 'Close menu', 'language.label': 'Change language',
+    'loading.label': 'Loading the K1 DEV portfolio', 'loading.location': 'YAOUNDÉ · CAMEROON', 'loading.status': 'DIGITAL CRAFT · WEB & MOBILE',
     'hero.availability': 'AVAILABLE FOR NEW PROJECTS',
     'hero.title': 'I create web & mobile<br>experiences <span class="accent">that matter.</span>',
     'hero.intro': 'I’m Kuidja Yonkeu Yann Kewan, a freelance web and mobile developer. I turn ideas into clear, fast digital experiences designed around the people who use them.',
@@ -69,9 +77,15 @@ const copy = {
     'skills.eyebrow': '02 — WHAT I DO',
     'skills.title': 'The right tools<br><span class="muted">for every stage.</span>',
     'skills.copy': 'I design the interface, build the app and create the systems behind it. Here are the tools I use.',
-    'skills.webtitle': 'Web interfaces', 'skills.webcopy': 'Smooth, accessible experiences that adapt to every screen.',
+    'skills.marquee': 'Animated marquee of the technologies used by K1 Dev',
+    'skills.webtitle': 'Website development', 'skills.webcopy': 'Smooth, accessible experiences that adapt to every screen.',
     'skills.mobiletitle': 'Mobile apps', 'skills.mobilecopy': 'Apps designed to support people wherever they are.',
     'skills.backendtitle': 'APIs & data', 'skills.backendcopy': 'Reliable services and organized data that help products grow.',
+    'skills.price': 'View pricing', 'skills.webprice': 'View website development prices', 'skills.mobileprice': 'View mobile app development prices',
+    'mobilePricing.eyebrow': 'MOBILE DEVELOPMENT', 'mobilePricing.title': 'Mobile development pricing', 'mobilePricing.intro': 'Each app is quoted according to its features, screens and target platforms.',
+    'mobilePricing.mvp': 'Prototype & MVP', 'mobilePricing.mvpcopy': 'A first version to bring the core idea of your application to life and validate it.',
+    'mobilePricing.app': 'Full mobile application', 'mobilePricing.appcopy': 'A custom application designed around your business needs and your users.',
+    'mobilePricing.ask': 'Let’s discuss',
     'projects.eyebrow': '03 — FEATURED PROJECT',
     'projects.title': 'A product built<br><span class="muted">to move forward, together.</span>',
     'projects.intro': 'Meet Umoja, a mobile app designed to make community finance easier to manage.',
@@ -160,6 +174,28 @@ function animateWords(title) {
 setLanguage(currentLanguage);
 document.querySelector('#year').textContent = new Date().getFullYear();
 
+const pageLoader = document.querySelector('#page-loader');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (pageLoader && reduceMotion) {
+  pageLoader.remove();
+  document.body.classList.remove('is-loading');
+} else if (pageLoader) {
+  const loaderStartedAt = performance.now();
+  let loaderIsClosing = false;
+  const closePageLoader = () => {
+    if (loaderIsClosing) return;
+    loaderIsClosing = true;
+    const remainingIntro = Math.max(0, 2400 - (performance.now() - loaderStartedAt));
+    window.setTimeout(() => {
+      pageLoader.classList.add('is-leaving');
+      document.body.classList.remove('is-loading');
+      window.setTimeout(() => pageLoader.remove(), 560);
+    }, remainingIntro);
+  };
+  window.addEventListener('load', closePageLoader, { once: true });
+  window.setTimeout(closePageLoader, 2800);
+}
+
 menuButton.addEventListener('click', () => {
   const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
   menuButton.setAttribute('aria-expanded', String(!isOpen));
@@ -177,14 +213,46 @@ navigation.querySelectorAll('a').forEach((link) => {
 
 languageButton.addEventListener('click', () => setLanguage(currentLanguage === 'fr' ? 'en' : 'fr'));
 
-const revealItems = document.querySelectorAll('.section-heading, .about-grid, .values, .skills-top, .skill-group, .project-card, .project-note, .pricing-top, .price-card, .contact-inner > *');
+document.querySelectorAll('.stack-set img[data-icon]').forEach((icon) => {
+  icon.addEventListener('error', () => {
+    if (!icon.dataset.fallbackTried) {
+      icon.dataset.fallbackTried = 'true';
+      icon.classList.add('stack-logo-fallback');
+      icon.src = `https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/${icon.dataset.icon}.svg`;
+      return;
+    }
+    icon.hidden = true;
+  });
+});
+
+const revealItems = document.querySelectorAll('.hero-art, .section-heading, .about-grid, .values, .values > div, .skills-top, .skill-group, .stack-marquee, .projects-top, .project-card, .project-note, .pricing-top, .price-card, .mobile-pricing-top, .mobile-price-card, .contact-inner > *');
 const titles = document.querySelectorAll('h1, h2');
 
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   revealItems.forEach((item) => item.classList.add('reveal'));
+  const revealStaggerGroups = [
+    ['.skill-groups', '.skill-group'],
+    ['.values', ':scope > div'],
+    ['.project-grid', '.project-card, .project-note'],
+    ['.pricing-grid', '.price-card'],
+    ['.mobile-price-grid', '.mobile-price-card'],
+  ];
+  revealStaggerGroups.forEach(([groupSelector, itemSelector]) => {
+    document.querySelectorAll(groupSelector).forEach((group) => {
+      group.querySelectorAll(itemSelector).forEach((item, index) => {
+        item.style.setProperty('--reveal-delay', `${index * 110}ms`);
+      });
+    });
+  });
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
+      const clearRevealDelay = (event) => {
+        if (event.propertyName !== 'opacity') return;
+        entry.target.style.removeProperty('--reveal-delay');
+        entry.target.removeEventListener('transitionend', clearRevealDelay);
+      };
+      entry.target.addEventListener('transitionend', clearRevealDelay);
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     });
